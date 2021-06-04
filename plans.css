@@ -1,0 +1,211 @@
+.plans {
+  background-image: url(assets/planos-background-mobile.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+}
+
+.plans__headline {
+  position: relative;  
+}
+
+.plans__headline::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #e93d50; 
+  display: block;
+}
+
+.plans__title {
+  color: #2e4255;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 2rem 0;
+  margin-bottom: 1.5rem;  
+  line-height: 1.5;  
+}
+
+.plans__list {
+  display: flex;
+  flex-direction: column;  
+  align-items: center; 
+  justify-content: center;   
+}
+
+.plans__item {
+  background: #f76148;
+  color: #fff;
+  border-radius: 12px; 
+  padding: 5rem 1rem 1.5rem 1rem;
+  margin-bottom: 2rem;
+  width: 260px;    
+  box-shadow: 0 0 50px -5px rgba(244, 90, 74, 50);
+  position: relative;
+}
+
+.plans__item::before {
+  content: "";  
+  background-image: url(assets/simbolo-musidot-branco.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  top: 25px;
+  right: 50%;
+  transform: translateX(50%);  
+}
+
+.plans__item-name, .plans__item-price{
+  font-size: 1rem;
+  font-weight: 500;  
+}
+
+.plans__item-name {
+  margin-bottom: 1rem;
+}
+
+.plans__item-price {
+  margin-bottom: 0.5rem;
+}
+
+.plans__item-pricehighlight {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.plans__item-totalprice {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.plans__item-bonus {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;  
+  font-weight: 500;
+}
+
+.plans__item-cta {
+  display: block;  
+  background: #fff;
+  color: #e94b53;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 800;    
+}
+
+.plans__item:nth-child(2) > .plans__item-cta{
+  margin-top: 3.375rem; 
+}
+
+.plans__item:nth-child(2)::before {
+  background-image: url(assets/simbolo-musidot-dark.svg);    
+}
+
+.plans__item:nth-child(1)::after {
+  content: "favorite";
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #e94b53;
+  background: #fff;
+  width: 40%;
+  height: 1.75rem;
+  padding: 0.5rem 0;
+  position: absolute;
+  top: -1.75rem;
+  border-radius: 8px 8px 0 0;  
+  right: 50%;
+  transform: translateX(50%);
+  font-weight: 800;
+  letter-spacing: 1.5px;    
+}
+
+.plans__observation {
+  font-weight: 500;
+  font-size: 0.875rem;  
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.plans__contactlink {
+  display: block;
+  font-weight: 800;
+}
+
+
+@media (min-width: 760px) {
+  .plans {
+    background-image: url(assets/planos-background.png);    
+  }  
+  
+  .plans__list {
+    flex-direction: row;          
+  }
+
+  .plans__item {
+    margin: 1rem 2rem 2rem;  
+    width: 300px;   
+  }
+
+  .plans__title {
+    font-size: 1.5rem;
+    padding-top: 3rem; 
+  }
+
+  .plans__item-cta {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .plans__item-cta:hover {
+    transform: translateY(3px);
+    opacity: 0.9;  
+  }
+  
+  .plans__contactlink:hover {
+    text-decoration: underline;
+  } 
+ 
+}
+
+
+@media (min-width: 1200px) {
+  .plans__item-name, .plans__item-price{
+    font-size: 1.5rem;    
+  }  
+
+  .plans__item-pricehighlight {
+    font-size: 2.5rem;    
+  } 
+    
+  .plans__item-cta {
+    font-size: 1rem;     
+  }
+
+  .plans__title {
+    font-size: 1.75rem;    
+  } 
+
+  .plans__item {
+    padding: 6rem 2rem 2rem;
+  }
+
+  .plans__item::before {
+    width: 40px;
+    height: 50px;
+    position: absolute;     
+    top: 30px;    
+  }   
+}

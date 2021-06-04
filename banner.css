@@ -1,0 +1,155 @@
+.banner {
+  background: #2a3042;
+  text-align: center;  
+}
+
+.banner__mobile {
+  background-image: url(assets/video-mobile.jpg);    
+  padding-top: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner__desktop {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;  
+}
+
+.banner__title{
+  color: #e93d50; 
+  font-weight: 800; 
+  font-size: 1rem;  
+}
+
+.banner__highlight {
+  color: #fff;
+}
+
+.banner__subtitle {
+  color: #fff;
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  font-weight: 500;
+}
+
+.banner__icon {
+  display: inline-block;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: -45%;
+}
+
+.banner__icon > img {
+  width: 100%;
+}
+
+@media (min-width: 760px) {
+  .banner__mobile {
+    display: none;
+  }
+
+  .banner {
+    background-image: url(assets/video-principal.jpg);
+    background-size: 100%;    
+    background-repeat: no-repeat;
+    height: 200px;    
+    text-align: right;     
+  }
+
+  .banner__desktop {
+    height: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .banner__info {
+    position: absolute;
+    right: 5%;
+    bottom: 2.5rem;      
+  }    
+
+  .banner__title{
+    font-size: 1.5rem;      
+  }  
+  
+  .banner__highlight {
+    display: block;    
+    line-height: 1.2;   
+  }
+  
+  .banner__subtitle {
+    font-size: 1rem;       
+  }
+
+  .banner__icon {    
+    right: 50px;
+    transform: translateX(0);
+    top: -70px;
+  } 
+  
+}
+
+@media (min-width: 900px) {
+  .banner {
+    height: 230px;    
+  }
+
+  .banner__info {
+    bottom: 25%;
+  }  
+  
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    height: 270px;    
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    height: 310px;    
+  } 
+
+  .banner__info {
+    right: calc((100% - 1100px)/2);
+  }
+}
+
+@media (min-width: 1400px) {
+  .banner {
+    height: 350px;    
+  }
+
+  .banner__title {
+    font-size: 2.25rem;       
+  }    
+  
+  .banner__subtitle {
+    font-size: 1.5rem;   
+  }
+
+  .banner__icon {    
+    right: 90px;    
+  }  
+
+  .banner__info {
+    right: calc((100% - 1200px)/2);
+  }
+}
+
+@media (min-width: 1550px) {
+  .banner {
+    height: 390px;        
+  }    
+}
+
+@media (min-width: 1750px) {
+  .banner {
+    height: 450px;         
+  }  
+}

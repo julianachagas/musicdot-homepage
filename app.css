@@ -1,0 +1,152 @@
+.app {
+  background-color: #f76148;
+  color: #fff;
+  padding-top: 2rem;  
+  padding-bottom: 2rem;
+  text-align: center;  
+}
+
+.app__image {
+  display: none;
+}
+
+.app__title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff7f8; 
+  margin: 0 auto 0.5rem; 
+  width: 12rem;  
+  line-height: 1.3; 
+}
+
+.app__subtitle {
+  font-size: 0.875rem;
+  font-weight: 500;    
+  padding: 1rem 1.75rem; 
+  line-height: 1.5; 
+}
+
+.app__subtitle span {
+  font-weight: 700;
+}
+
+.app__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.app__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #e94b53;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;  
+  width: 7.5rem;    
+  height: 3rem;
+  letter-spacing: 2px;    
+}
+
+.app__item:first-child {
+  margin-right: 0.75rem;
+}
+
+.app__icon {
+  width: 17px;
+  height: 21px;
+  margin-right: 0.5rem;    
+}
+
+.app__text {
+  font-weight: 700;
+}
+
+@media (min-width: 760px) {
+  .app {
+    background-image: url(assets/app-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;         
+    display: flex;  
+    justify-content: center;   
+  }
+
+  .app__image {
+    display: block;
+    width: 11.5rem;
+    height: 22rem;
+    margin-right: 2rem;
+  }
+
+  .app__info {
+    width: 24rem;
+  }
+
+  .app__title {
+    font-size: 2rem; 
+    width: 100%;
+    padding-top: 0.75rem;  
+  }
+  
+  .app__subtitle {
+    font-size: 1rem;    
+  }  
+
+  .app__item {
+    width: 9rem;
+    height: 3.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .app__icon {
+    width: 21px;
+    height: 28px;    
+  }
+
+  .app__item:hover {
+    transform: translateY(3px);
+    opacity: 0.9;
+  }  
+}
+
+@media (min-width: 1200px) {
+  .app {
+    background-size: 130%;    
+  }
+
+  .app__image {
+    width: 17rem;
+    height: 30rem;
+    margin-right: 2rem;
+  }
+
+  .app__info {
+    width: 29.5rem;
+    padding-top: 3rem;
+  }
+
+  .app__title {
+    font-size: 2.5rem;    
+  }
+  
+  .app__subtitle {
+    font-size: 1.25rem;    
+  }  
+
+  .app__item {
+    width: 12rem;
+    height: 4.5rem;
+    font-weight: 800;
+    font-size: 0.875rem;
+  }
+
+  .app__icon {
+    width: 21px;
+    height: 28px;    
+  }
+}
