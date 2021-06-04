@@ -1,5 +1,5 @@
 ## MusicDot Homepage 
-<br>
+
 <p>Technologies: HTML | CSS</p>
 <p>The development of this homepage is part of the program of the Web Development Course: HTML, CSS & JavaScript by Caelum, a brazilian technology school that offers online and in-person courses.</p>
 <p>This project was developed based on the course handout and the existing MusicDot homepage.</p>
@@ -18,32 +18,24 @@
 - Flexbox;
 - Media Queries.
 
-<br>
-
 ### Final Result - Mobile version 
 <br>
 <img src="screenshot/screenshot-mobile.png">
 <br>
-<br>
-
 
 ### Final Result - Tablet version
 <br>
 <img src="screenshot/screenshot-tablet.png">
-<br>
 <br>
 
 ### Final Result - Laptop version
 <br>
 <img src="screenshot/screenshot-laptop.png">
 <br>
-<br>
-
 
 ### Final Result - Desktop version
 <br>
 <img src="screenshot/screenshot-desktop.png"/>
-<br>
 <br>
 
 ***
